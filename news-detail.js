@@ -63,7 +63,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   // Hàm hiển thị chi tiết bài viết
   async function renderNewsDetailFromAPI(id) {
     try {
-      const res = await fetch(`https://post.tltruongkiem.online/wp-json/wp/v2/posts/${id}`);
+      const res = await fetch(`https://post.tltruongkiem.xyz/wp-json/wp/v2/posts/${id}`);
       if (!res.ok) throw new Error('Không tìm thấy bài viết');
       const post = await res.json();
 
