@@ -64,7 +64,7 @@ function renderNewsDetail() {
 // Khởi động
 async function initNews() {
   try {
-    const API_URL = 'https://post.tltruongkiem.online/wp-json/wp/v2/posts?per_page=100'; // lấy tối đa 100 bài
+    const API_URL = 'https://post.tltruongkiem.xyz/wp-json/wp/v2/posts?per_page=100'; // lấy tối đa 100 bài
     const response = await fetch(API_URL);
     const data = await response.json();
 
