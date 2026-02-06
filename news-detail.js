@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', async () => {
 
   // Hàm lấy toàn bộ bài viết từ WordPress REST API
   async function fetchNewsList() {
-    const res = await fetch('https://post.tltruongkiem.online/wp-json/wp/v2/posts?per_page=100');
+    const res = await fetch('https://post.tltruongkiem.xyz/wp-json/wp/v2/posts?per_page=100');
     const data = await res.json();
     return data.map(post => ({
       id: post.id,
